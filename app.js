@@ -32,13 +32,12 @@ $(document).ready(function(){
   })
 
 
+  function addDataToDom(arr){
+    for(var i = 0; i < arr.length; i++){
+      $('.theData').append(
+        '<h1>' + arr[i].comName + '</h1>' +
+        '<span>' + arr[i].sciName + '</span>'
+      );
+    };
+  }
 })
-
-function addDataToDom(arr){
-  for(var i = 0; i < arr.length; i++){
-    $('.theData').append(
-      '<h1>' + arr[i].comName + '</h1>' +
-      '<span>' + arr[i].sciName + '</span>'
-    );
-  };
-}
